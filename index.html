@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="ilustracao">
+            <img src="img/illustration.png" alt="ilustração">
+        </div>
+
+        <div id="container">
+
+            <header class="cabecalho">
+                <h2>Restic36</h2>
+                <h1>Trilha 2 - Fullstack</h1>
+            </header>
+
+            <div class="botoes">
+                <button id="entrar" class="active" onclick="transitionToLogin()">Entrar</button>
+                <button id="cadastro" onclick="transitionToRegister()">Cadastrar</button>
+            </div>
+
+            <div class="formulario">
+                <form id="form-login">
+                    <input class="email" type="email" placeholder="exemplo@gmail.com" required>
+                    <input class="senha" type="password" placeholder="Senha" required>
+                </form>
+    
+                <form class="hidden"  id="form-register">
+                    <input class="nome" type="text" placeholder="Nome" name="Nome" required>
+                    <input class="email" type="email" placeholder="E-mail" required>
+                    <input class="senha" type="password" placeholder="Senha" required>
+                    <input class="senha" type="password" placeholder="Confirme a senha" required>
+                </form>
+                <input class="btn" type="button" value="Enviar">
+            </div>
+        </div>
+    </section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
