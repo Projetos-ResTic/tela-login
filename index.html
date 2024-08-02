@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Document</title>
 </head>
-<body>
+<body id="alterar-body">
     <section>
-        <div class="ilustracao">
-            <img src="img/illustration.png" alt="ilustração">
+        <div class="ilustracao" >
+            <img id="img1" src="img/illustration.png" alt="ilustração">
+
+            <img class="hidden" id="img2" src="img/Collaboration-bro.png" alt="ilustração">
         </div>
+
 
         <div id="container">
 
+            <p class="icon hidden" id="icon-sol" onclick="mudarCorDeFundoClaro()">
+                <i class="fa-regular fa-sun"></i>
+            </p>
+
+            <p class="icon" id="icon-lua" onclick="mudarCorDeFundoEscuro()">
+                <i class="fa-regular fa-moon"></i>
+            </p>
+            
             <header class="cabecalho">
                 <h2>Restic36</h2>
                 <h1>Trilha 2 - Fullstack</h1>
             </header>
 
-            <div class="botoes">
+            <div class="botoes" id="botoes">
                 <button id="entrar" class="active" onclick="transitionToLogin()">Entrar</button>
                 <button id="cadastro" onclick="transitionToRegister()">Cadastrar</button>
             </div>
 
             <div class="formulario">
+
                 <form id="form-login">
                     <input class="email" type="email" placeholder="exemplo@gmail.com" required>
                     <input class="senha" type="password" placeholder="Senha" required>
@@ -36,7 +50,15 @@
                     <input class="senha" type="password" placeholder="Senha" required>
                     <input class="senha" type="password" placeholder="Confirme a senha" required>
                 </form>
+
+                <form id="form-recuperar" class="hidden">
+                    <input class="senha" type="text" placeholder="Informe seu E-mail">
+                    <p>Será enviado um token de acesso para seu e-mail</p>
+                </form>
+
                 <input class="btn" type="button" value="Enviar">
+                <p onclick="recuperarConta()"><a href="#">Esqueceu a senha?</a></p>
+
             </div>
         </div>
     </section>

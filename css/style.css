@@ -10,6 +10,11 @@ a {
 
 .hidden { display: none; }
 
+.icon{
+    margin-left: 70%;
+    color: #DC44C3;
+}
+
 body{ 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #E8E8E8;
@@ -45,6 +50,7 @@ section{
 
 #container{
     background-color: #FFFF ;
+    
     width: 412.73px;
     height: 600px;
     border-radius: 0 30px 30px 0;
@@ -60,14 +66,18 @@ section{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 40%;
+    height: 60%;
     align-items: center; 
+}
+
+.formulario p a{
+    color: #DC44C3;
 }
 
 .cabecalho h2{
     color: #DC44C3;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .cabecalho h1{
@@ -101,7 +111,7 @@ section{
 
 .btn{
     background-color: #DC44C3;
-    width: 150px;
+    width: 140px;
     padding: 10px;
     color: white;
 }
@@ -111,12 +121,17 @@ section{
 
 input{
     border-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     border-radius: 30px;
 }
 
-#form-login #form-register{
+#form-login, #form-register, #form-recuperar{
     align-items: center;
+}
+
+#form-recuperar p{
+    font-size: 12px;
+    margin-bottom: 15px;
 }
 
 input:focus {
@@ -128,6 +143,10 @@ input:focus {
     width: 250px ;
     padding: 10px;
     color: black;
+}
+
+.email:hover, .senha:hover, .nome:hover{
+    border: 1px solid #DC44C3;
 }
 
 
@@ -143,13 +162,18 @@ body {
 
 #container {
     width: 60%;
-    height: 60%;
+    height: 70%;
     border-radius: 30px;
 }
 
-.email, .senha, .nome{
+.cabecalho h2{
+    margin-bottom: 20px;
+}
+
+
+.email, .senha, .nome {
     background-color: #EAEAEA;
-    width: 260px ;
+    width: 270px;
     padding: 9px;
 }
 
@@ -160,29 +184,33 @@ body {
 }
 
 @media (max-width: 425px) {
-body {
-    background-color: #E8E8E8;
-}
+    body {
+        background-color: #E8E8E8;
+    }
 
-.ilustracao {
-    display: none;
-}
+    .ilustracao {
+        display: none;
+    }
 
-#container {
-    width: 80%;
-    height: 70%;
-    border-radius: 30px;
-}
+    #container {
+        width: 80%;
+        height: 70%;
+        border-radius: 30px;
+    }
 
-.email, .senha, .nome{
-    background-color: #EAEAEA;
-    width: 200px ;
-    padding: 9px;  
-}
+    .cabecalho h2{
+        margin-bottom: 20px;
+    }
 
-.btn{
-    width: 120px; 
-}
+    .email, .senha, .nome {
+        background-color: #EAEAEA;
+        width: 180px;
+        padding: 9px;
+    }
+    
+    .btn{
+        width: 120px; 
+    }
 
 }
 
